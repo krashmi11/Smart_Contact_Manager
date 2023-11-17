@@ -20,7 +20,7 @@ public class EmailSenderService {
 
         mailsender.send(mailMessage);
 
-        System.out.println("Mail send successfully");
+        System.out.println("Mail send successfully, Thank You");
 
     }
 }
