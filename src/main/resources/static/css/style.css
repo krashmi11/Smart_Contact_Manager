@@ -1,0 +1,114 @@
+body{
+    background: #e2e2e2!important;
+}
+.bg-primary{
+    background: #008080!important;
+}
+.banner{
+    width:100%;
+    height: 93vh;
+    background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0.8)),url(../img/manager.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.my-card{
+    padding:20px;
+    background: white;
+    margin-top:20px;
+}
+.my-card img{
+    width:50x;
+    height:50px;
+}
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 440px;
+    border: 1px solid #9C9C9C;
+    background-color: white;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+  @media only screen and (max-width:767px){
+    .sidebar{
+        display:none;
+        width:80%;
+        background: white;
+        height:100%;
+        position:fixed;
+        padding-top:45px;
+      }
+      .content{
+        margin-left: 0% !important;
+      }
+      
+  }
+  .sidebar{
+    width:18%;
+    background: white;
+    height:100%;
+    position:fixed;
+    padding-top:45px;
+    z-index: 999999999999999999999999999999999999999;
+  }
+  .sidebar a{
+    display:block;
+    width:100%;
+    padding:10px 25px;
+    text-decoration: none;
+    color:grey;
+  }
+  .sidebar a:hover{
+    background-color: #e2e2e2;
+  }
+
+
+  .sidebar .divider{
+    height:.5px;
+    width:100%;
+    background: #e2e2e2;
+    margin-top: 10px;
+  }
+
+  .content{
+    margin-left: 20%;
+  }
+  .sidebar .crossBtn{
+    position:absolute;
+    top:0;
+    right:35px;
+    font-size:36px;
+    cursor:pointer;
+  }
+  .my_profile_picture{
+    width:35px;
+    height:35px;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .icon-container {
+    position: fixed;
+    top: 11%;
+    right: 20px; /* Adjust this value to position the icon as desired */
+    transform: translateY(-50%);
+    z-index: 999; /* Ensures the icon is above other content */
+  }
+.search-container{
+  position:relative;
+}
+.search-result{
+  position:absolute;
+  background:white;
+  width:100%;
+  padding:10px;
+  border:1px solid gray;
+  display:none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org" th:replace="~{Users/base::Layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+<body>
+    <section>
+        <div class="container ">
+            <div class="card">
+                <div class="card-body">
+                    <div class="container text-center">
+                        <img style="height:200px; width:200px;" class="my_profile_picture mt-3 mb-3" src="" th:src="@{'/img/'+${user.imageurl}}" alt="profile_photo">
+                    </div>
+                    <h1 class="text-center mt-3 " th:text="${user.u_name}"></h1>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>#UserId:</th>
+                                <td><span th:text="${user.u_id}"></span></td>
+                            </tr>
+                            <tr>
+                                <th>Name:</th>
+                                <td><span th:text="${user.u_name}"></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <th>Email:</th>
+                                <td><span th:text="${user.email}"></span></td>
+                            </tr>
+                            <tr>
+                                <th>About:</th>
+                                <td><span th:text="${user.userDescription}"></span></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
